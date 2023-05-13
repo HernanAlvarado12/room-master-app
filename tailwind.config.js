@@ -3,6 +3,7 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     spacing: {
+      '0': '0rem',
       '0.2': '0.2rem',
       '0.5': '0.5rem',
       '1': '1rem',
@@ -49,7 +50,7 @@ export default {
           DEFAULT: 'hsl(0, 0%, 63%)',
           100: 'hsl(0, 0%, 27%)'
         }
-      }
+      },
     },
   },
   plugins: [],
