@@ -29,6 +29,9 @@ export default {
       '90': '90%'
     },
     extend: {
+      screens: {
+        ts: '900px'
+      },
       minWidth: ({ theme }) => ({
           ...theme('spacing')
       }),
