@@ -40,7 +40,7 @@ export default {
         sm: '1.6rem',
         md: '1.8rem',
         base: '2.4rem',
-        lg: '3.2rem',
+        lg: '3.8rem',
         xl: '4.2rem'
       },
       borderRadius: {
