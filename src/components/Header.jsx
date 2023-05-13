@@ -42,7 +42,7 @@ const Header = () => {
                     {menuList.map((item, key) => <Item key={key} text={item} color="black" size="sm" />)}
                 </ul>
             </menu>
-            <Picture classPicture="w-full absolute top-0 left-0 -z-10 aspect-square" classImage="w-full h-full" mobile={mobileOne} desktop={desktopOne} alt="Image number one"  />
+            <Picture classPicture="w-full absolute top-0 left-0 -z-10 aspect-square" classImage="w-full h-full" mobile={mobileOne} desktop={desktopOne} alt="Image number one" breakPoint="900px"  />
         </header>
     )
 }
