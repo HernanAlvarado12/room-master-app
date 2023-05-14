@@ -31,13 +31,13 @@ const Header = () => {
 
 
     return (
-        <header className="w-full max-h-[50rem] relative aspect-square ts:flex">
+        <header className="w-full max-h-[50rem] relative aspect-square ts:w-3/5 ts:h-[60vh] ts:flex">
             <nav className="w-90 h-10 mx-auto flex items-center justify-between ts:w-auto ts:pl-[5%]">
                 <img className="w-3 cursor-pointer ts:hidden" src={menu} alt="menu icon" onClick={handleMenu} />
                 <img className="mx-auto" src={logo} alt="logo icon" />
-                <div className="flex items-center justify-center absolute bottom-0 right-0 cursor-pointer bg-black">
-                    <img className="p-2.5 aspect-square" src={arrowLeft} alt="arrow left" />
-                    <img className="p-2.5 aspect-square" src={arrowRight} alt="arrow right" />
+                <div className="flex items-center justify-center absolute bottom-0 right-0 cursor-pointer bg-black ts:translate-x-full">
+                    <img className="p-2.5 aspect-square hover:bg-slate-400 hover:bg-opacity-20" src={arrowLeft} alt="arrow left" />
+                    <img className="p-2.5 aspect-square hover:bg-slate-400 hover:bg-opacity-20" src={arrowRight} alt="arrow right" />
                 </div>
             </nav>
             <menu className="w-full h-10 pr-3 hidden absolute top-0 bg-white ts:p-0 ts:pl-5 ts:flex ts:gap-x-3 ts:relative ts:bg-transparent" ref={menuRef}>
@@ -45,7 +45,7 @@ const Header = () => {
                     {menuList.map((item, key) => <Item key={key} text={item} color="black" size="sm" />)}
                 </ul>
             </menu>
-            <Picture classPicture="w-full h-full absolute top-0 left-0 -z-10 aspect-square" classImage="w-full h-full" mobile={mobileOne} desktop={desktopOne} alt="Image number one" breakPoint="900px"  />
+            <Picture classPicture="w-full h-full absolute top-0 left-0 -z-10 aspect-square" classImage="w-full h-full" mobile={mobileOne} desktop={desktopOne} alt="Image number one" breakPoint="850px"  />
         </header>
     )
 }

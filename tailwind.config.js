@@ -30,7 +30,7 @@ export default {
     },
     extend: {
       screens: {
-        ts: '900px'
+        ts: '950px'
       },
       minWidth: ({ theme }) => ({
           ...theme('spacing')
